@@ -1,0 +1,80 @@
+html,
+body {
+  /* font-family: "Source Code Pro", monospace; */
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff !important;
+}
+
+a,
+h2,
+h3,
+a.primary {
+  color: #8c8c8d !important;
+}
+
+.navbar-nav a {
+  font-family: "Roboto", sans-serif;
+}
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+nav {
+  background-color: #fff;
+}
+
+.default-btn {
+  background-color: #ec1966 !important;
+  color: #fff;
+  text-decoration: none;
+  border-color: transparent;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.bg-pink {
+  background-color: #ec1966;
+}
+
+.font-pink {
+  color: #ec1966 !important;
+}
+
+.title-1 {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 0;
+  color: #1c417f;
+}
+
+.title-2 {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 3em;
+  line-height: 1;
+  color: #05264f;
+}
+
+.title-3 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 2em;
+  line-height: 0;
+}
+
+.home-img {
+  width: 60vw;
+  height: 100%;
+}
+
+.home-section {
+  display: inline;
+}
+
+.banner {
+  margin-top: 20vh;
+}
