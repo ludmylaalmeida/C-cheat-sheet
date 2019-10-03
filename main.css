@@ -5,11 +5,15 @@ body {
   background-color: #fff !important;
 }
 
+a{
+  color: #fff;
+}
+
 a,
 h2,
 h3,
 a.primary {
-  color: #8c8c8d !important;
+  text-decoration: none;
 }
 
 .navbar-nav a {
@@ -33,6 +37,11 @@ nav {
   padding: 8px 20px;
   font-size: 1.2em;
   font-weight: 600;
+}
+
+.default-btn:hover{
+  color: #fff;
+  text-decoration: none;
 }
 
 .bg-pink {
@@ -77,4 +86,56 @@ nav {
 
 .banner {
   margin-top: 20vh;
+}
+
+.logo{
+  width: 250px;
+  height: auto;
+}
+
+.search-tool{
+  padding: 0.75rem 1.5rem;
+  border-radius: 125rem;
+  border-style: solid;
+  width: 60vw;
+  border-color: #05264f;
+}
+
+input:focus{
+  outline: none;
+}
+
+.search-icon{
+  margin-left: -30px;
+}
+
+.search-tool-navbar{
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  border-style: solid;
+  width: 15vw;
+  border-color: #05264f;
+}
+
+.nav-link{
+  color: #05264f;
+}
+
+.code-snippet{
+  background-color: #f5f7f8;
+  padding: 5px;
+}
+
+.gutter{
+  color: #afafaf !important;
+  padding: 5px 10px 5px 5px;
+  border-right: 1px solid #afafaf;
+}
+
+code{
+  color: #000!important;
+}
+
+.string{
+  color: #05264f;
 }
