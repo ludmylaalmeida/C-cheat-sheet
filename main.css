@@ -1,12 +1,13 @@
 html,
 body {
-  /* font-family: "Source Code Pro", monospace; */
-  font-family: "Montserrat", sans-serif;
-  background-color: #fff !important;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 }
 
-a{
-  color: #fff;
+.bg {
+  background: url(bg-01.svg) right center no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
 }
 
 a,
@@ -16,47 +17,65 @@ a.primary {
   text-decoration: none;
 }
 
+/* navbar */
+
 .navbar-nav a {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
 }
 
-.box-shadow {
-  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+.nav-link {
+  color: #000;
 }
 
-nav {
-  background-color: #fff;
+.nav-item:not(:last-child) {
+  padding-right: 50px;
 }
 
+.active .nav-link {
+  color: #d70174;
+}
+
+/* Buttons  */
 .default-btn {
-  background-color: #ec1966 !important;
+  background-color: #d70174 !important;
   color: #fff;
   text-decoration: none;
   border-color: transparent;
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 8px 20px;
   font-size: 1.2em;
   font-weight: 600;
 }
 
-.default-btn:hover{
+.default-btn:hover {
   color: #fff;
   text-decoration: none;
 }
 
+/* colors */
+
 .bg-pink {
-  background-color: #ec1966;
+  background-color: #d70174;
 }
 
 .font-pink {
-  color: #ec1966 !important;
+  color: #d70174 !important;
+}
+
+/* INDEX */
+
+/* Improve Your Skills Banner */
+
+.banner {
+  margin-top: 20vh;
 }
 
 .title-1 {
   font-family: "Montserrat";
   font-weight: 500;
-  font-size: 1.5em;
-  line-height: 0;
+  font-size: 2em;
+  line-height: 0.5;
   color: #1c417f;
 }
 
@@ -71,71 +90,151 @@ nav {
 .title-3 {
   font-family: "Montserrat";
   font-weight: 600;
-  font-size: 2em;
-  line-height: 0;
+  font-size: 2.5em;
+  line-height: 0.5;
 }
 
-.home-img {
-  width: 60vw;
-  height: 100%;
-}
-
-.home-section {
-  display: inline;
-}
-
-.banner {
-  margin-top: 20vh;
-}
-
-.logo{
+.logo {
   width: 250px;
   height: auto;
 }
 
-.search-tool{
-  padding: 0.75rem 1.5rem;
-  border-radius: 125rem;
-  border-style: solid;
-  width: 60vw;
-  border-color: #05264f;
+.home-img{
+  width: 80%;
+  height: auto;
+}
+
+
+/* Definitions Page */
+
+/* .def:first-child {
+  border-top: 1px solid #6c757d38;
+  padding: 20px;
+} */
+
+.def {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+.def:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 0.25rem 0.75rem rgba(215, 1, 116, 0.2);
+}
+
+.def h3 {
+  color: #d70174;
+}
+
+.hide{
+  display: none;
+}
+
+/* code section - Home Page */
+.code-section {
+  bottom: 20px;
+}
+
+.code-section h1 {
+  font-weight: bold;
+}
+
+.code-section .gist-meta{
+  display: none;
+}
+
+/* Code Snippet */
+
+/* .box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+} */
+
+.gist .gist-file{
+  border-color: transparent!important;
+}
+
+.gist .gist-data{
+  background-color: #f5f7f8!important;
+  border-bottom: 1px solid transparent!important;
+}
+
+.gist .highlight{
+  background: transparent!important;
+}
+
+.gist .Box-body{
+  padding: 10px!important;
+}
+
+.gist .pl-k{
+  color: #d70174!important;
+}
+
+/* Search */
+
+.search{
+  background-color: #fff;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+  width: 970px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+.search-btn{
+  background-color: #d70174 !important;
+  color: #fff!important;
+  text-decoration: none;
+  border-color: transparent;
+  border-radius: 30px;
+  padding: 15px 40px;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+/* Categories - Def page */
+
+.categories{
+  background-color: #fff;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+  margin: 1.5vw 1.8vw 1.5vw 1vw;
+}
+
+.categories:hover{
+  background-color: #d70174;
+  color: #fff;
+}
+
+.categories img{
+  width: 60%;
 }
 
 input:focus{
-  outline: none;
+  outline-width: 0;
 }
 
-.search-icon{
-  margin-left: -30px;
+select:focus{
+  outline-width: 0;
 }
 
-.search-tool-navbar{
-  padding: 0.3rem 1rem;
-  border-radius: 20px;
-  border-style: solid;
-  width: 15vw;
-  border-color: #05264f;
+
+/* bar */
+.icon{
+  margin-left: -40px;
 }
 
-.nav-link{
-  color: #05264f;
+.line{
+  border: 0.5px solid #D8D8D8;
+  height: 40px;
+  margin-right: 10px;
 }
 
-.code-snippet{
-  background-color: #f5f7f8;
-  padding: 5px;
-}
-
-.gutter{
-  color: #afafaf !important;
-  padding: 5px 10px 5px 5px;
-  border-right: 1px solid #afafaf;
-}
-
-code{
-  color: #000!important;
-}
-
-.string{
-  color: #05264f;
+/* searching */
+.hide{
+  display: none;
 }

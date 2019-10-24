@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>The Complete C Cheat Sheet by Ludmyla Almeida</title>
+    <title>Code Snippet</title>
 
     <!-- css and bootstrap -->
     <link rel="stylesheet" href="./main.css" type="text/css">
@@ -14,20 +14,20 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
-
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg ">
+<body class="bg">
+    <!-- navbar -->
+    <nav class="container-fluid navbar navbar-expand-lg">
         <a class="navbar-brand" href="index.html"><img class="logo" src="logo.png" alt="Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,71 +43,59 @@
                     <a class="nav-link float-right" href="definitions.html">Definitions<span
                             class="sr-only">(current)</span></a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link float-right" href="code.html">Code<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link float-right" href="definitions.html">About<span
+                            class="sr-only">(current)</span></a>
+                </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input type="text" class="search-tool-navbar" name="search" placeholder="Search...">
-                <span class="search-icon fa fa-search"></span>
-            </form>
         </div>
     </nav>
+    <!-- end navbar -->
 
-    <div class="container home-section">
-        <div class="row">
-            <div class="col">
-                <img class="home-img" src="main-img.svg">
-            </div>
-
-            <div class="banner col text-right mr-5">
-                <p class="title-1">IMPROVE YOUR</p>
-                <p class="title-2">PROGRAMMING</p>
-                <p class="font-pink title-3 mb-5">SKILL</p>
-                <a class="default-btn" href="search.html">Get Started</a>
+    <!--  -->
+    <div class="container">
+        <div class="home-section">
+            <div class="row banner d-flex align-items-center">
+                <div class="col-md-6">
+                    <p class="title-1">IMPROVE YOUR</p>
+                    <p class="title-2">PROGRAMMING</p>
+                    <p class="font-pink title-3 mb-5">SKILL</p>
+                    <a class="default-btn" href="search.html">Get Started</a>
+                </div>
+                <div class="col-md-6">
+                    <img class="home-img" src="main-img.svg" alt="guy in a computer">
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container code-section banner mb-5 ">
         <div class="row text-center">
             <div class="col">
-                <h1 class="font-pink">C</h1>
-                <div class="code-snippet">
-                <table>
-                    <td class="gutter">
-                        <div class="line number1 index0 alt2">1</div>
-                    </td>
-                    <td class="container text-left">
-                        <code class="line number1 index0 alt2">println(%c, <span class="string">"Hello World!"</span>);</code>
-                    </td>
-                </table>
-            </div>
-            </div>
-            <div class="col">
-                <h1 class="font-pink">C++</h1>
-                <div class="code-snippet">
-                    
-                    <code>cout &lt;&lt; "Hello World!" &lt;&lt; endl;</code>
+                <h1 class="mb-5 font-pink">C</h1>
+                <div class="code-snippet box-shadow">
+                    <script src="https://gist.github.com/ludmylaalmeida/12818610f0b9e41257e6bd7f37e26a05.js"></script>
                 </div>
             </div>
             <div class="col">
-                <h1 class="font-pink">JAVA</h1>
-                <table>
-                        <td class="gutter">
-                            <div class="line number1 index0 alt2">1</div>
-                        </td>
-                        <td>
-                            <div class="code-snippet">
-                    <code>System.out.println("Hello World!");</code>
+                <h1 class="mb-5 font-pink">C++</h1>
+                <div class="code-snippet">
+                    <script src="https://gist.github.com/ludmylaalmeida/4fae289d363753bdf145805a4807a064.js"></script>
                 </div>
-                        </td>
-                
-                </table>
+            </div>
+            <div class="col">
+                <h1 class="mb-5 font-pink">JAVA</h1>
+                <div class="code-snippet">
+                    <script src="https://gist.github.com/ludmylaalmeida/0d22f049448116e8fe4f08c8199729d8.js"></script>
+                </div>
             </div>
         </div>
     </div>
-
-    </div>
-
-    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script> -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 </body>
 
 </html>

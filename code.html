@@ -45,10 +45,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto mr-3">
                 <li class="nav-item">
-                    <a class="nav-link float-right" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link float-right" href="index.html">Home</a>
                 </li>
-                <li class="nav-item  active">
+                <li class="nav-item">
                     <a class="nav-link float-right" href="definitions.html">Definitions<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link float-right" href="code.html">Code<span
                             class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -61,13 +65,12 @@
 
 
     <div class="container banner">
-        <h1>Definitions</h1>
-        <div class="search d-flex align-items-center mt-2">
+        <div class="search d-flex align-items-center">
             <i class="ml-4 col-1 font-pink fas fa-search"></i>
             <div class="col-4 icon">
-                <input id="search" type="search" class="form-control-plaintext" placeholder="Search...">
+                <input type="text" class="form-control-plaintext" placeholder="Search...">
             </div>
-            <!-- <div class="line"></div>
+            <div class="line"></div>
             <i class="ml-4 col-1 font-pink fas fa-align-left"></i>
             <div class="col-3 icon">
                 <select class="form-control-plaintext" data-toggle="dropdown">
@@ -76,128 +79,98 @@
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                 </select>
-            </div> -->
+            </div>
             <div class="col d-flex justify-content-end">
-                <input type="button" class="search-btn" id="search-btn" value="search" />
+                <a class="search-btn">Search</a>
             </div>
         </div>
-        <!-- <div class="container col-12">
-                <ul class="list-group result"></ul>
-            </div> -->
+
     </div>
 
     <div class="container mt-5">
         <h2 class="font-pink">Explore</h2>
         <h2>Different Categories</h2>
         <div class="row text-center">
-            <div class="categories" id="c">
+            <div class="categories ">
                 <img class="justify-content-center" src="C.png" alt="C">
-                <h4>Definitions</h4>
+                <h2>C</h2>
             </div>
-            <div class="categories" id="cplusplus">
+            <div class="categories">
                 <img class="justify-content-center" src="cplus.png" alt="C">
-                <h4>Code Sample</h4>
+                <h2>C++</h2>
             </div>
-            <div class="categories" id="sorts">
+            <div class="categories">
                 <img class="justify-content-center" src="a-z.png" alt="C">
-                <h4>Sorts</h4>
+                <h2>Sorts</h2>
             </div>
-            <div class="categories" id="tree">
+            <div class="categories">
                 <img class="justify-content-center" src="tree.png" alt="C">
-                <h4>Binary Tree</h4>
+                <h2>Binary Tree</h2>
             </div>
         </div>
     </div>
 
-    <!-- Definitions -->
 
-    <div class="container mt-5 " id="definitions">
-        <h2 class="mt-5 mb-5 title">#Definitions</h2>
+    <div class="container mt-5" hidden>
+        <h2 class="mt-5 mb-5">#Definitions</h2>
+        <div class="row">
+            <div class="col">
+                <!-- navbar for def -->
+                <a class="search-tag-btn mr-3" href="search.html">C</a>
+                <a class="search-tag-btn mr-3" href="search.html">C++</a>
+                <a class="search-tag-btn mr-3" href="search.html">JAVA</a>
+                <a class="search-tag-btn mr-3" href="search.html">Sorts</a>
+                <a class="search-tag-btn mr-3" href="search.html">Binary Tree</a>
+            </div>
+        </div>
 
-        <!-- C Definitions -->
-        <div class="row mt-5 c-def">
-            <div class="def col-12 c">
+        <div class="row mt-5" id="">
+            <div class="def col-12">
                 <h3>Variable</h3>
                 <p>A named location in memory.</p>
             </div>
-            <div class="def col-12 c">
+            <div class="def col-12">
                 <h3>Recursion</h3>
                 <p>A function that calls itself.</p>
             </div>
-            <div class="def col-12 c">
+            <div class="def col-12">
                 <h3>Valid Identifier</h3>
                 <p>A function that calls itself.</p>
             </div>
-            <div class="def col-12 c">
+            <div class="def col-12">
                 <h3>C-string</h3>
                 <p>A null-terminated character array.</p>
             </div>
-            <div class="def col-12 c">
+            <div class="def col-12">
                 <h3>Expression</h3>
                 <p>A term or series of terms separated by operators that evaluate to a single value and that value has a
                     type.</p>
             </div>
-            <div class="def col-12 c">
+            <div class="def col-12">
                 <h3>Pre-increment (++x)</h3>
                 <p>It evaluates before the function is executed x. The value of x is incremented.</p>
             </div>
-            <div class="def col-12 c">
+            <div class="def col-12">
                 <h3>post-increment (x++)</h3>
                 <p>It evaluates after the function is executed. A copy of the value of x is recorded before we change it
                     and increment .</p>
             </div>
-            <div class="def col-12 c">
+            <div class="def col-12">
                 <h3>Pointer</h3>
                 <p>A variable that stores the address of another variable. Pointers are indicated by *</p>
             </div>
-            <div class="def col-12 c">
+            <div class="def col-12">
                 <h3>Cast to the known type</h3>
                 <p>Gives context so the program knows the type</p>
             </div>
         </div>
 
-        <!-- Sorts Definitions + code -->
-        <div id="sort" class="sorts-def d-none">
+        <div id="sort">
             <div class="row mt-5" id="">
                 <div class="def col-12">
                     <h3>Bubble Sort</h3>
-                    <!-- def -->
                     <p>Starting at the beginning of a list, compare adjacent pair of elements if the pair is out of
                         order swap them, do it n-1 times. </p>
-
-                    <!-- code  -->
-                    <div class="accordion" id="bubbleSort">
-                        <!-- tags/buttons -->
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                            aria-expanded="true" aria-controls="collapseOne">
-                            C
-                        </button>
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            C++
-                        </button>
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            JAVA
-                        </button>
-                        <!-- end tags/buttons -->
-                        <!-- code example -->
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                            data-parent="#bubbleSort">
-                            <script
-                                src="https://gist.github.com/ludmylaalmeida/1040baededbe562d18fcbb6a8d729993.js"></script>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#bubbleSort">
-                            <script
-                                src="https://gist.github.com/ludmylaalmeida/335e61e7f5bfbc9b6f82e26147b64709.js"></script>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                            data-parent="#bubbleSort">
-                            <script
-                                src="https://gist.github.com/ludmylaalmeida/b42f439b65d37670b969586d1ea5cb6e.js"></script>
-                        </div>
-                        <!-- end code example -->
-                    </div>
                 </div>
                 <div class="def col-12">
                     <h3>Selection Sort</h3>
@@ -227,14 +200,7 @@
 
                     </p>
                 </div>
-                <!-- Tree Definitions -->
-                <div class="def col-12">
-                    <h3>Full Tree</h3>
-                    <!-- def -->
-                    <p>The children has all the children that it can have. </p>
-                </div>
             </div>
-
 
         </div>
 
@@ -242,18 +208,7 @@
     </div>
 
 
-    </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="main.js" type="text/javascript"></script>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script> -->
 </body>
 
 </html>
