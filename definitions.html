@@ -62,7 +62,8 @@
         <div class="row banner justify-content-md-center">
             <!-- <h1 class=" font-pink">Search</h1> -->
             <div class="row search">
-                <div class="search-bar col form-control form-control-lg form-control-plaintext d-flex align-items-center ">
+                <div
+                    class="search-bar col form-control form-control-lg form-control-plaintext d-flex align-items-center ">
                     <i class="col-1 font-pink fas fa-search"></i>
                     <input id="search" type="text" class=" form-control-plaintext" placeholder="Search..." />
                 </div>
@@ -102,19 +103,34 @@
                 <!--gen-def Definitions -->
                 <div class="mt-5 definition d-none">
                     <div class="box col-12 searchable  ">
-                        <h3>Variable</h3>
+                        <h3 class="d-inline mr-3">Variable</h3>
+                        <a class="topic-badge">C</a>
+                        <a class="topic-badge">C++</a>
+                        <a class="topic-badge">Java</a>
                         <p>A named location in memory.</p>
                     </div>
                     <div class="box col-12 searchable  ">
-                        <h3>Recursion</h3>
+                        <h3 class="d-inline mr-3">Recursion</h3>
+                        <a class="topic-badge">C</a>
+                        <a class="topic-badge">C++</a>
+                        <a class="topic-badge">Java</a>
                         <p>A function that calls itself.</p>
                     </div>
                     <div class="box col-12 searchable  ">
-                        <h3>Valid Identifier</h3>
-                        <p>A function that calls itself.</p>
+                        <h3 class="d-inline mr-3">Valid Identifier</h3>
+                        <a class="topic-badge">C</a>
+                        <a class="topic-badge">C++</a>
+                        <a class="topic-badge">Java</a>
+                        <ol>
+                            <li>Only allowed to start with letters & underscores.</li>
+                            <li>It can have as many letters & underscores</li>
+                            <li>Cannot be a keyword( ex: return)</li>
+                        </ol>
                     </div>
                     <div class="box col-12 searchable  ">
-                        <h3>c-string</h3>
+                        <h3 class="d-inline mr-3">c-string </h3>
+                        <a class="topic-badge">C</a>
+                        <a class="topic-badge">C++</a>
                         <p>A null-terminated character array.</p>
                     </div>
                     <div class="box col-12 searchable  ">
@@ -123,6 +139,15 @@
                             value
                             has a
                             type.</p>
+                    </div>
+                    <div class="box col-12 searchable  ">
+                        <h3 class="d-inline mr-3">Short Circuit Evaluation</h3>
+                        <a class="topic-badge">C</a>
+                        <a class="topic-badge">C++</a>
+                        <a class="topic-badge">Java</a>
+                        <p>In a boolean expression if C can determine the value based on the first term, it will stop
+                            there. For example in an OR expression, it evaluates as true if the first term is true. In a
+                            AND it will evaluate the whole expression as false if the first term is false.</p>
                     </div>
                     <div class="box col-12 searchable  ">
                         <h3>Pre-increment (++x)</h3>
@@ -135,8 +160,11 @@
                             and increment .</p>
                     </div>
                     <div class="box col-12 searchable  ">
-                        <h3>Pointer</h3>
-                        <p>A variable that stores the memory address of another variable. Pointers are indicated by * (dereferecing operator)</p>
+                        <h3 class="d-inline mr-3">Pointer</h3>
+                        <a class="topic-badge">C</a>
+                        <a class="topic-badge">C++</a>
+                        <p>A variable that stores the memory address of another variable. Pointers are indicated by *
+                            (dereferecing operator)</p>
                     </div>
                     <div class="box col-12 searchable  ">
                         <h3>Cast to the known type</h3>
@@ -144,7 +172,8 @@
                     </div>
                     <div class="box col-12 searchable  ">
                         <h3>Free</h3>
-                        <p>Function that takes a pointer to the space in memory that has been allocated and it will deallocate memory. 
+                        <p>Function that takes a pointer to the space in memory that has been allocated and it will
+                            deallocate memory.
                         </p>
                     </div>
                     <div class="box col-12 searchable  ">
@@ -153,7 +182,9 @@
                         </p>
                     </div>
                     <div class="box col-12 searchable  ">
-                        <h3>Struct</h3>
+                        <h3 class="d-inline mr-3">Struct</h3>
+                        <a class="topic-badge">C</a>
+                        <a class="topic-badge">C++</a>
                         <p>User-defined data type. You can create variables out of that data type.
                         </p>
                     </div>
@@ -162,9 +193,161 @@
                         <p>A dynamic array. It has size, capacity and data( a data pointer to the array).
                         </p>
                     </div>
+                    <div class="box col-12 searchable  ">
+                        <h3>Constructor</h3>
+                        <p>A constructor is a member function of a class that is called automatically when an object of
+                            the class is declared. A constructor must have the same name as the class of which it is a
+                            member.
+                        </p>
+                    </div>
+                    <div class="box col-12 searchable  ">
+                        <h3>Destructor</h3>
+                        <p>A destructor is a special kind of member function for a class. A destructor is called
+                            automatically when an object of the class passes out of scope. The main reason for
+                            destructors is to return memory to the freestore manager so the memory can be reused.
+                        </p>
+                    </div>
+                    <div class="box col-12 searchable  ">
+                        <h3>Copy Constructor</h3>
+                        <p>A copy constructor is a constructor that has a single argument that is of the same type as
+                            the class. If you define a copy constructor, it will be called automatically whenever a
+                            function returns a value of the class type and whenever an argument is plugged in for a
+                            call-by-value parameter of the class type. Any class that uses pointers and the operator new
+                            should have a copy constructor.
+
+                        </p>
+                    </div>
+                    <div class="box col-12 searchable  ">
+                        <h3>Acessor Function</h3>
+                        <p>An accessor function allows access to private data members in C++. It does not modify the
+                            data, it only accesses it.
+                        </p>
+                        <ol>
+                            <li>An accessor doesn't need arguments</li>
+                            <li>An accessor has the same type as the retrieved variable</li>
+                            <li>The name of the accessor begins with the get prefix
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="box col-12 searchable  ">
+                        <h3>Mutator function</h3>
+                        <p>Modifies a protected data member.
+                        </p>
+                        <ol>
+                            <li>It does not return anything(void)
+                            </li>
+                            <li>It needs an argument</li>
+                            <li>The name of the mutator begins with the set prefix
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="box col-12 searchable  ">
+                        <h3 class="d-inline mr-3">Overloading</h3>
+                        <a class="topic-badge">C++</a>
+                        <p>When a function has the same name, but different numbers or types of parameters(signature).
+                        </p>
+                    </div>
+                    <div class="box col-12 searchable  ">
+                        <h3 class="d-inline mr-3">Class Level Definitions</h3>
+                        <a class="topic-badge">C++</a>
+                        <a class="topic-badge">Java</a>
+                        <p><b>private :</b> Hidden from the user. When the programmer labels data members "private,"
+                            they cannot be accessed and manipulated by member functions of other classes. Accessors
+                            allow access to these private data members.
+                        </p>
+                        <p><b>public :</b> The user has access to it.
+                        </p>
+                        <p><b>Member :</b> The member functions have special access to the data of their object.
+                        </p>
+                    </div>
+                    <div class="box col-12 searchable  ">
+                        <h3 class="d-inline mr-3">The Rule of Five</h3>
+                        <a class="topic-badge">C++</a>
+                        <p>If you have an object that is dynamically allocated and you need to manage the data.
+                        </p>
+                    </div>
+
+
 
                 </div>
                 <!-- end gen-def definitions -->
+
+                <!-- code sample -->
+                <div class="mt-5 sample-code d-none">
+                        <div class="box col-12 searchable">
+                                <h3>Hello World</h3>
+        
+                                <!-- code  -->
+                                <div class="accordion" id="helloWorld">
+                                    <!-- tags/buttons -->
+                                    <button class="topic-badge"  data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        C
+                                    </button>
+                                    <button class="topic-badge collapsed" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        C++
+                                    </button>
+                                    <button class="topic-badge collapsed"  data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        JAVA
+                                    </button>
+                                    <!-- end tags/buttons -->
+                                    <!-- code example -->
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                        data-parent="#helloWorld">
+                                        <script src="https://gist.github.com/ludmylaalmeida/12818610f0b9e41257e6bd7f37e26a05.js"></script>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#helloWorld">
+                                        <script src="https://gist.github.com/ludmylaalmeida/4fae289d363753bdf145805a4807a064.js"></script>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                        data-parent="#helloWorld">
+                                        <script src="https://gist.github.com/ludmylaalmeida/0d22f049448116e8fe4f08c8199729d8.js"></script>
+                                    </div>
+                                    <!-- end code example -->
+                                </div>
+                            </div>
+
+                            <div class="box col-12 searchable">
+                                    <h3>Reverse String</h3>
+            
+                                    <!-- code  -->
+                                    <div class="accordion" id="reverseString">
+                                        <!-- tags/buttons -->
+                                        <button class="topic-badge collapsed" data-toggle="collapse" data-target="#stringC"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            C
+                                        </button>
+                                        <button class="topic-badge collapsed"  data-toggle="collapse"
+                                            data-target="#stringCpp" aria-expanded="false" aria-controls="collapseTwo">
+                                            C++
+                                        </button>
+                                        <button class="topic-badge"  data-toggle="collapse"
+                                            data-target="#stringJAVA" aria-expanded="false" aria-controls="collapseThree">
+                                            JAVA
+                                        </button>
+                                        <!-- end tags/buttons -->
+                                        <!-- code example -->
+                                        <div id="stringC" class="collapse" aria-labelledby="headingOne"
+                                            data-parent="#reverseString">
+                                            <script src="https://gist.github.com/ludmylaalmeida/307c551eba2e8ca1326b4c3cfa364142.js"></script>
+                                        </div>
+                                        <div id="stringCpp" class="collapse" aria-labelledby="headingTwo"
+                                            data-parent="#reverseString">
+                                            <script src="https://gist.github.com/ludmylaalmeida/19a4fc31a79c838c15d627577358c05e.js"></script>
+                                        </div>
+                                        <div id="stringJAVA" class="collapse show" aria-labelledby="headingThree"
+                                            data-parent="#reverseString">
+                                            <script src="https://gist.github.com/ludmylaalmeida/ba39c039e548e1b28874aeb73882c1b2.js"></script>
+                                        </div>
+                                        <!-- end code example -->
+                                    </div>
+                                </div>
+                      
+
+                </div>
 
                 <!-- Sorts Definitions + code -->
                 <div class="mt-5 sorts-def d-none">
@@ -254,21 +437,35 @@
                 <!-- Tree Definitions -->
                 <div class="mt-5 tree-def d-none">
                     <div class="box col-12 searchable">
+                        <h3>Binary Tree</h3>
+                        <p>Everything in the left subtree is smaller than everything in the right subtree. </p>
+                    </div>
+                    <div class="box col-12 searchable">
                         <h3>Full Tree</h3>
+                        <p>A tree in which every node other than the leaves has two children. </p>
+                    </div>
+                    <div class="box col-12 searchable">
+                        <h3>Complete Tree</h3>
                         <p>The children has all the children that it can have. </p>
                     </div>
                     <div class="box col-12 searchable">
-                        <h3>Binary Tree</h3>
-                        <p>Everything in the left subtree is smaller than everything in the right subtree. </p>
+                        <h3>Tree Traversal</h3>
+                        <p>Trees can be traversed in 3 different ways: </p>
+                        <ol>
+                            <li class="font-weight-bold">Pre-order (S L R)</li>
+                            <dd>used to copy the tree</dd>
+                            <li class="font-weight-bold">In-order (L S R)</li>
+                            <dd>used to iterate the tree</dd>
+                            <li class="font-weight-bold">Post-order (L R S)</li>
+                            <dd>used to destroy the tree</dd>
+                        </ol>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>

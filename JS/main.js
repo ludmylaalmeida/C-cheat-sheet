@@ -1,5 +1,3 @@
-// search by categories
-
 $(document).ready(
 
     //function to sort elements by h3

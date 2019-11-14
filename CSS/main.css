@@ -44,7 +44,7 @@ a.primary {
 /* Buttons  */
 .default-btn {
   background-color: #d70174 !important;
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
   border-color: transparent;
   border-radius: 25px;
@@ -56,6 +56,18 @@ a.primary {
 .default-btn:hover {
   color: #fff;
   text-decoration: none;
+}
+
+.topic-badge {
+  color: #d70174!important;
+  display: inline-block;
+  padding: 0.3em 0.9em;
+  margin: 0 0.5em 0.5em 0;
+  white-space: nowrap;
+  background-color: #f9c3e06b;
+  border-radius: 3px;
+  font-size: 75%;
+  border-color: transparent;
 }
 
 /* colors */
@@ -122,7 +134,7 @@ a.primary {
   padding: 20px;
   margin: 0 0 25px 0;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
-  width: 880px!important;
+  width: 880px !important;
 }
 
 .box:hover {
@@ -134,9 +146,9 @@ a.primary {
   color: #d70174;
 }
 
-.box > *{
+.box > p {
   word-wrap: break-word;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 /* code section - Home Page */
@@ -243,4 +255,8 @@ input:focus {
 /* searching */
 .hide {
   display: none;
+}
+
+.collapsed {
+  background-color: #fff!important;
 }
