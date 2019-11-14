@@ -1,0 +1,246 @@
+html,
+body {
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+  background-color: transparent;
+}
+
+.bg {
+  background: url(img/bg-01.svg) right center no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+a,
+h2,
+h3,
+a.primary {
+  text-decoration: none;
+}
+
+/* p{
+  font-size: 1.5vw;
+} */
+
+/* navbar */
+
+.navbar-nav a {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #000;
+}
+
+.nav-item:not(:last-child) {
+  padding-right: 50px;
+}
+
+.active .nav-link {
+  color: #d70174;
+}
+
+/* Buttons  */
+.default-btn {
+  background-color: #d70174 !important;
+  color: #fff;
+  text-decoration: none;
+  border-color: transparent;
+  border-radius: 25px;
+  padding: 8px 20px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.default-btn:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* colors */
+
+.bg-pink {
+  background-color: #d70174;
+}
+
+.font-pink {
+  color: #d70174 !important;
+}
+
+/* INDEX */
+
+/* Improve Your Skills Banner */
+
+.banner {
+  margin-top: 20vh;
+}
+
+.title-1 {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 2em;
+  line-height: 0.5;
+  color: #1c417f;
+}
+
+.title-2 {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 3em;
+  line-height: 1;
+  color: #05264f;
+}
+
+.title-3 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 2.5em;
+  line-height: 0.5;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+}
+
+.home-img {
+  width: 80%;
+  height: auto;
+}
+
+/* Definitions Page */
+
+/* .def:first-child {
+  border-top: 1px solid #6c757d38;
+  padding: 20px;
+} */
+
+.box {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 0 25px 0;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+  width: 880px!important;
+}
+
+.box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.25rem 0.75rem rgba(215, 1, 116, 0.2);
+}
+
+.box h3 {
+  color: #d70174;
+}
+
+.box > *{
+  word-wrap: break-word;
+  padding: 10px;
+}
+
+/* code section - Home Page */
+.code-section {
+  bottom: 20px;
+}
+
+.code-section h1 {
+  font-weight: bold;
+}
+
+.code-section .gist-meta {
+  display: none;
+}
+
+/* Code Snippet */
+
+/* .box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+} */
+
+.gist .gist-file {
+  border-color: transparent !important;
+}
+
+.gist .gist-data {
+  background-color: #f5f7f8 !important;
+  border-bottom: 1px solid transparent !important;
+}
+
+.gist .highlight {
+  background: transparent !important;
+}
+
+.gist .Box-body {
+  padding: 10px !important;
+}
+
+.gist .pl-k {
+  color: #d70174 !important;
+}
+
+/* Search */
+
+.search {
+  background-color: #fff;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+  width: 880px;
+  height: 70px;
+  border-radius: 5px;
+}
+
+.search-bar {
+  border-radius: 5px;
+  margin: 10px 10px;
+}
+
+.search-bar:hover,
+.search-bar:visited {
+  border: 1px solid #d70174;
+  border-radius: 30px;
+}
+
+.search-btn {
+  background-color: #d70174 !important;
+  color: #fff !important;
+  text-decoration: none;
+  border-color: transparent;
+  border-radius: 30px;
+  padding: 10px 40px;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 10px;
+}
+
+/* Categories - Def page */
+
+.categories {
+  background-color: #fff;
+  width: 180px;
+  height: 180px;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+  margin: 1.5vw 1.8vw 0 1.5vw;
+}
+
+.categories:hover {
+  background-color: #d70174;
+  /* color: #fff; */
+}
+
+.categories img {
+  width: 60%;
+}
+
+input:focus {
+  outline-width: 0;
+}
+
+/* bar */
+/* .icon{
+  margin-left: -40px;
+} */
+
+/* searching */
+.hide {
+  display: none;
+}
