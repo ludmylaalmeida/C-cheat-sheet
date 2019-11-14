@@ -6,7 +6,7 @@ body {
 }
 
 .bg {
-  background: url("/bg-01.svg") right center no-repeat;
+  background: url("/img/bg.svg") right center no-repeat;
   background-size: contain;
   background-attachment: fixed;
 }
